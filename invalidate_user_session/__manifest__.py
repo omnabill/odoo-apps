@@ -2,8 +2,8 @@
 {
     'name': 'Invalidate User Session',
     'version': '16.0.1.0.0',
-    'summary': """Action to force user to logout during running session.""",
-    'description': """Action to force user to logout during running session. """,
+    'summary': """Action to force user to logout during running session, only for administrator of the system.""",
+    'description': """Action to force user to logout during running session, only for administrator of the system. """,
     'category': 'Extra Tools',
     'author': 'OMAR',
     'license': 'AGPL-3',

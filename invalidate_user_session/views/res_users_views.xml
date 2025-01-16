@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
 
             <xpath expr="//header" position="inside">
-                <button name="invalidate_session" string="Invalidate Session" type="object" class="oe_highlight"/>
+                <button name="invalidate_session" string="Invalidate Session" type="object" class="oe_highlight" groups="base.group_system"/>
             </xpath>
         </field>
     </record>

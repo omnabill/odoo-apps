@@ -5,6 +5,7 @@
         <field name="name">Invalidate Session</field>
         <field name="type">ir.actions.server</field>
         <field name="model_id" ref="base.model_res_users"/>
+        <field name="groups_id" eval="[(4, ref('base.group_system'))]"/>
         <field name="binding_model_id" ref="base.model_res_users"/>
         <field name="state">code</field>
         <field name="binding_view_types">list</field>
