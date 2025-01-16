@@ -7,6 +7,7 @@
     'category': 'Extra Tools',
     'author': 'OMAR',
     'license': 'AGPL-3',
+    "images": ["static/description/banner.png"],
     'depends': ['base'],
     'data': [
         'data/ir_server.xml',
