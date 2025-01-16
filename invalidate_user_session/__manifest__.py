@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+{
+    'name': 'Invalidate User Session',
+    'version': '16.0.1.0.0',
+    'summary': """Action to force user to logout during running session.""",
+    'description': """Action to force user to logout during running session. """,
+    'category': 'Extra Tools',
+    'author': 'OMAR',
+    'license': 'AGPL-3',
+    'depends': ['base'],
+    'data': [
+        'data/ir_server.xml',
+        'views/res_users_views.xml',
+    ],
+    'assets': {
+        'web.assets_backend': [
+            '/invalidate_user_session/static/src/js/idle_timer.js',
+        ]
+    },
+    'installable': True,
+    'auto_install': False,
+    'application': False,
+}
