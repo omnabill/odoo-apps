@@ -5,7 +5,7 @@
     'summary': """Action to force user to logout during running session, only for administrator of the system.""",
     'description': """Action to force user to logout during running session, only for administrator of the system. """,
     'category': 'Extra Tools',
-    'author': 'OMAR',
+    'author': 'OMAR-NABIL',
     'license': 'AGPL-3',
     "images": ["static/description/banner.png"],
     'depends': ['base'],
