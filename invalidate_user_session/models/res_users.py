@@ -8,5 +8,5 @@ class Users(models.Model):
 
     def invalidate_session(self):
         for user in self:
-
-            self.env['bus.bus']._sendone('custom-logout', 'custom-logout', {'user_id': user.id})
+            params = {"type": "custom-logout", "payload": {"user_id": user.id}}
+            self.env["bus.bus"]._sendone("custom-logout","notification",params)
