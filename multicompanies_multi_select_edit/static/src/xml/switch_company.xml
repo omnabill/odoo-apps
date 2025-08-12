@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+    <t t-inherit="web.SwitchCompanyMenu" t-inherit-mode="extension" owl="1">
+             <xpath expr="//Dropdown" position="inside">
+                  <DropdownItem class="'p-2 bg-white d-flex justify-content-end'">
+                    <div class="btn-group" role="group" t-if="state.companiesToToggle.length">
+                      <button
+                              type="button"
+                              class="btn btn-primary"
+                              t-on-click="confirmSelection"
+                              t-att-disabled="state.companiesToToggle.length === 0 ? 'disabled' : null">
+                        Confirm
+                        <t t-if="state.companiesToToggle.length">
+                          &nbsp;<span class="badge bg-light text-dark" t-esc="state.companiesToToggle.length"/>
+                        </t>
+                      </button>
+
+                      <button
+                                type="button"
+                                class="btn btn-outline-secondary"
+                                t-on-click="cancelSelection">
+                        Cancel
+                      </button>
+                    </div>
+                  </DropdownItem>
+             </xpath>
+  </t>
+</templates>
